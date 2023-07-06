@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Startseite</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Startseite</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+    <h1 class="title">Herzlich Willkommen!</h1>
+    <main class="content">
+        <div class="textbox">
+            <h2>Beschreibung</h2>
+            <p>
+                Beim Bastionrouting in Minecraft-Speedruns handelt es sich um eine Methode, um schneller und
+                effizienter Bastions zu finden, die in der Nether-Dimension generiert werden. Bastions sind riesige
+                Strukturen, die von Piglins bewohnt werden und wertvolle Gegenstände wie Goldblöcke und Netherite
+                enthalten können.
+            </p>
+            <p>
+                Das Bastionrouting beinhaltet die Verwendung bestimmter Techniken und Strategien, um den Spieler gezielt
+                zu Bastions zu führen.
+            </p>
+            <p>
+                Der Zweck des Bastionroutings in Minecraft-Speedruns besteht darin, die Suche nach Bastions zu
+                optimieren und wertvolle Gegenstände effizient zu finden, um den Spielverlauf zu beschleunigen.
+                Es erfordert Kenntnisse über die Spielmechaniken und das Nether-Layout, sowie die Fähigkeit,
+                Hinweise zu erkennen und schnelle Entscheidungen zu treffen, um die beste Route zu wählen.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>

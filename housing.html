@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Housing Bastion</title>
+    <link rel="stylesheet" type="text/css" href="styles_content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar_container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="homepage.html">Startseite</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <h3 class="sidebar-title">Inhaltsverzeichnis</h3>
+        <ul class="contents">
+            <li><a href="index.html">Treasure Bastion</a></li>
+            <li><a href="bridge.html">Bridge Bastion</a></li>
+            <li><a href="housing.html" class="active">Housing Bastion</a></li>
+            <li><a href="stables.html">Stables Bastion</a></li>
+        </ul>
+        <img src="housing.png" alt="Housing Bastion">
+    </div>
+    <div class="main-content">
+        <h1>Housing Bastion</h1>
+        <br>
+        <h3>Merkmale</h3>
+        <p>Die Housing Bastion besteht aus zwei hohen Segmenten und einem etwas flacheren mittleren Segment, bei dem der
+            Boden oft aus Lava besteht. Der Vorteil dieser Bastion besteht darin, dass sie immer genau gleich aufgebaut
+            ist.</p><br>
+        <h3>Route</h3>
+        <p>Es gibt zwei Möglichkeiten, wie diese Bastion gespielt werden kann. Die verbreitetste Methode besteht darin,
+            zunächst die Kisten auf dem höheren Turm zu plündern und dann in den Schatzraum vorzudringen, wo sich die
+            Goldblöcke befinden. Dort können auch die Piglins eingefangen werden, um anschliessend mit ihnen zu handeln.
+            Bei der anderen Route betritt man direkt den Schatzraum von der unteren flacheren Ebene aus, ohne die Kisten
+            oben mitzunehmen. Je nachdem, wo man sich befindet, wenn man die Bastion betritt, ist die eine oder andere
+            Route besser geeignet.</p>
+    </div>
+
+    <div class="video-section">
+        <h2>YouTube-Video</h2>
+        <div class="video-container">
+            <iframe width="1060" height="596" src="https://www.youtube.com/embed/PTSku7owolM?start=135"
+                title="TREASURE BASTION - MINECRAFT SPEEDRUN TUTORIAL #5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>

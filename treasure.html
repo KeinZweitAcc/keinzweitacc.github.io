@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Treasure Bastion</title>
+    <link rel="stylesheet" type="text/css" href="styles_content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar_container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <h3 class="sidebar-title">Inhaltsverzeichnis</h3>
+        <ul class="contents">
+            <li><a href="treasure.html" class="active">Treasure Bastion</a></li>
+            <li><a href="bridge.html">Bridge Bastion</a></li>
+            <li><a href="housing.html">Housing Bastion</a></li>
+            <li><a href="stables.html">Stables Bastion</a></li>
+        </ul>
+        <img src="treasure.png" alt="Treasure Bastion">
+    </div>
+    <div class="main-content">
+        <h1>Treasure Bastion</h1>
+        <br>
+        <h3>Merkmale</h3>
+        <p>Die Treasure Bastion zeichnet sich durch ihren sehr grossen Wohnbereich und den quadratischen Schatzraum aus.
+            Unter der Brücke, die beide Teile verbindet, befinden sich zahlreiche mit Lava gefüllte Felder.</p><br>
+        <h3>Route</h3>
+        <p>Die beliebteste Route führt zunächst dazu, dass man die beiden Goldblöcke auf der Brücke abbaut und sie
+            anschliessend verwendet, um die Piglins zum Turm zu locken. Dort werden sie in einem Raum mit einer grossen
+            Truhe eingesperrt, und man wirft ihnen das gesammelte Gold zu. Während sie mit dem erhaltenen Gold handeln,
+            kann man die anderen Goldblöcke auf dem Turm suchen und einsammeln, um sie später ebenfalls zum Handeln zu
+            nutzen.</p>
+    </div>
+
+    <div class="video-section">
+        <h2>YouTube-Video</h2>
+        <div class="video-container">
+            <iframe width="1060" height="596" src="https://www.youtube.com/embed/S2Hjha0F9Dk?start=81"
+                title="TREASURE BASTION - MINECRAFT SPEEDRUN TUTORIAL #5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>

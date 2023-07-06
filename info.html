@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Navigation</title>
+    <link rel="stylesheet" type="text/css" href="styles_info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="info.html" class="active">Info</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-container">
+        <h2>Informationen zum Projekt</h2>
+        <br>
+        <p>Diese Website ist im Rahmen einer Projektarbeit an der Berufsfachschule Baden entstanden. Die Website wurde
+            von Manuel Jonas Greub unter der Leitung von Dyonisos Mpliamplias erstellt. Das Ziel des Projektes war es,
+            eine Website mit mind. vier Unterseiten, einer Startseite und einer Navigationsseite zu erstellen. Die
+            Website muss ausserdem einen Header sowie einen Footer enthalten.</p>
+        <br>
+        <h2>Über Mich</h2>
+        <br>
+        <p>Ich bin ein Schüler der Informatikmittelschule in Baden an der Kantonsschule Baden und der Berufsfachschule
+            Baden und habe die Ausbildung im August 2022 gestartet. Ich verbringe meine Freizeit gerne mit Programmieren
+            und Minecraft-Speed-Running. Ich bin sehr motiviert für diesen Beruf und freue mich auf das, was mich in den
+            kommenden Jahren erwartet.</p>
+
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Stables Bastion</title>
+    <link rel="stylesheet" type="text/css" href="styles_content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar_container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <h3 class="sidebar-title">Inhaltsverzeichnis</h3>
+        <ul class="contents">
+            <li><a href="treasure.html">Treasure Bastion</a></li>
+            <li><a href="bridge.html">Bridge Bastion</a></li>
+            <li><a href="housing.html">Housing Bastion</a></li>
+            <li><a href="stables.html" class="active">Stables Bastion</a></li>
+        </ul>
+        <img src="stables.png" alt="Stables Bastion">
+    </div>
+    <div class="main-content">
+        <h1>Stables Bastion</h1>
+        <br>
+        <h3>Merkmale</h3>
+        <p>Die Stables Bastion besteht aus drei hohen Segmenten, die jeweils aus einer von drei verschiedenen Arten
+            bestehen können. Zusätzlich gibt es einen etwas flacheren Teil, der im Gegensatz zur Housing Bastion aus
+            zwei Teilen besteht, die jeweils mit kleinen Brücken verbunden sind. Diese Struktur ist auch von aussen
+            sichtbar.</p><br>
+        <h3>Route</h3>
+        <p>Diese Bastion ist mit Abstand die schwierigste zu spielen, da es hier extrem viele verschiedene Varianten
+            geben kann und es sogar vorkommen kann, dass es keine Goldblöcke gibt. Um herauszufinden, welche Abteile
+            Goldblöcke enthalten und welche nicht, sollte man zuerst die grosse Kiste im flachen Teil suchen, der an die
+            hohen Segmente angrenzt. Anschliessend steigt man die Treppe daneben hinauf und prüft, ob es dort
+            weitergeht. Wenn dies der Fall ist, findet man dort die Goldblöcke, mit denen man anschliessend mit den
+            Piglins handeln kann.</p>
+    </div>
+
+    <div class="video-section">
+        <h2>YouTube-Video</h2>
+        <div class="video-container">
+            <iframe width="1060" height="596" src="https://www.youtube.com/embed/u0ZXhr9mL84?start=302"
+                title="TREASURE BASTION - MINECRAFT SPEEDRUN TUTORIAL #5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>

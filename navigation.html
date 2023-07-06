@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion Routing - Navigation</title>
+    <link rel="stylesheet" type="text/css" href="styles_navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="navigation.html" class="active">Navigation</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-container">
+        <a href="treasure.html"><img src="treasure.png" alt="Treasure Bastion"></a>
+        <a href="bridge.html"><img src="bridge.png" alt="Bridge Bastion"></a>
+        <a href="housing.html"><img src="housing.png" alt="Housing Bastion"></a>
+        <a href="stables.html"><img src="stables.png" alt="Stables Bastion"></a>
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li><span id="date"></span></li>
+            <li>Manuel Greub</li>
+            <li><a href="https://www.bbbaden.ch/">BBB</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('date').textContent = currentDate.toLocaleDateString('de-ch', options);
+    </script>
+
+</body>
+
+</html>
